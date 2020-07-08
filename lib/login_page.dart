@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lets_begin/bg_image.dart';
-import 'package:lets_begin/home_page.dart';
+import 'package:lets_begin/util/Constants.dart';
+
+
 
 class LoginPage extends StatefulWidget {
   @override
@@ -68,7 +70,8 @@ class _LoginPageState extends State<LoginPage> {
                           color: Colors.greenAccent,
                           textColor: Colors.black,
                           onPressed: () {
-                            Navigator.pushNamed(context, "/home");
+                            Constants.prefs.setBool("loggedin", true);
+                            Navigator.pushReplacementNamed(context, "/home");
                           }),
                     ],
                   ),
