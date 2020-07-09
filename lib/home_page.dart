@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:lets_begin/drawer.dart';
 import 'package:lets_begin/util/Constants.dart';
+import 'package:lets_begin/widgets/drawer.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -22,7 +22,6 @@ class _HomePageState extends State<HomePage> {
   getData() async {
     var res = await http.get(url);
     data = jsonDecode(res.body);
-
     setState(() {});
   }
 

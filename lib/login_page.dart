@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lets_begin/bg_image.dart';
 import 'package:lets_begin/util/Constants.dart';
+import 'package:lets_begin/widgets/bg_image.dart';
 
 
 

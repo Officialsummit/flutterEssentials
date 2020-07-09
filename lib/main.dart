@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lets_begin/homePage_with_FB.dart';
 import 'package:lets_begin/home_page.dart';
 import 'package:lets_begin/login_page.dart';
 import 'package:lets_begin/util/Constants.dart';
@@ -10,7 +11,7 @@ Future main() async{
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "Lets Begin Flutter",
-    home: Constants.prefs.getBool("loggedin")==true?HomePage():LoginPage(),
+    home: Constants.prefs.getBool("loggedin")==true?HomePageWithFb():LoginPage(),
     theme: ThemeData(
       primarySwatch: Colors.grey,
     ),
